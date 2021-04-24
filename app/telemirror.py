@@ -9,8 +9,7 @@ from telethon.sync import TelegramClient
 from telethon.tl.types import InputMediaPoll, MessageMediaPoll, MessageEntityTextUrl
 from telethon.tl.types import MessageEntityTextUrl
 
-from database import Database, MirrorMessage
-from settings import (API_HASH, API_ID, MAPPING, CHATS, DB_URL,
+from settings import (API_HASH, API_ID, MAPPING, CHATS,
                       LIMIT_TO_WAIT, LOG_LEVEL, REMOVE_URLS, SESSION_STRING,
                       TIMEOUT_MIRRORING)
 from utils import remove_urls
@@ -20,7 +19,6 @@ logger = logging.getLogger(__name__)
 logger.setLevel(level=LOG_LEVEL)
 
 client = TelegramClient(StringSession(SESSION_STRING), API_ID, API_HASH)
-db = Database(DB_URL)
 
 
 def remove_url_from_message(message):
