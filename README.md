@@ -56,7 +56,7 @@ python app/telemirror.py
 ```
 
 ## Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/khoben/telemirror)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/arioki1/telegram-relay.git)
 
 or
 
